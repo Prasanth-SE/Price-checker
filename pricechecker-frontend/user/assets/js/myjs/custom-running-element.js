@@ -1,0 +1,1 @@
+document.getElementsByClassName('slick-track').style.paddingBottom = '30px';
