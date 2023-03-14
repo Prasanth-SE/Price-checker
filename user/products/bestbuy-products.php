@@ -1,0 +1,47 @@
+<?php
+$response = array();
+$data = array (
+    "deal_docs"=>array(
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/flipkart.png",
+            "deal_title"=>"Wireless Audio System Multiroom 360 degree Full base audio",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"1111"),
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/ebay.png",
+            "deal_title"=>"title2",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"url2"),
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/img.jpg",
+            "deal_title"=>"Tablet White EliteBook Revolve 810 G2",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"url3"),
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/img2.jpg",
+            "deal_title"=>"Purple Solo 2 Wireless",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"url4"),
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/img2.jpg",
+            "deal_title"=>"Smartphone 6S 32GB LTE",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"url4"),
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/flipkart.png",
+            "deal_title"=>"Widescreen NX Mini F1 SMART NX",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"1111"),
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/ebay.png",
+            "deal_title"=>"Widescreen NX Mini F1 SMART NX",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"url2"),
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/img.jpg",
+            "deal_title"=>"Tablet White EliteBook Revolve 810 G2",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"url3"),
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/img2.jpg",
+            "deal_title"=>"Purple Solo 2 Wireless",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"url4"),
+        array("deal_main_image_url"=>"http://localhost/pricechecker/user/images/img2.jpg",
+            "deal_title"=>"Smartphone 6S 32GB LTE",
+            "app_sale_range"=>array("min"=>10, "max"=>20),
+            "deal_details_url"=>"url4")
+    )
+);
+echo json_encode($response);
