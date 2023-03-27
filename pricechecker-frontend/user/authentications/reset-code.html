@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Verification</title>
+    <link rel="stylesheet" href="/pricechecker-frontend/user/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/css/commonstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 form">
+                <div>
+                    <h2 class="text-center">Code Verification</h2>
+<!--                        <div id="alert-success" class="alert alert-success text-center" style="padding: 0.4rem 0.4rem">-->
+<!--                        </div>-->
+                        <div id="alert-error" class=""></div>
+                    <div class="form-group">
+                        <input id="opt" class="form-control" type="number" name="otp" placeholder="Enter code" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control button" type="submit" name="check-reset-otp" value="Submit" onclick="checkResetOtp()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/pricechecker-frontend/user/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/pricechecker-frontend/user/assets/js/myjs/common.js"></script>
+    <script src="/pricechecker-frontend/user/assets/js/myjs/reset-code.js"></script>
+</body>
+</html>

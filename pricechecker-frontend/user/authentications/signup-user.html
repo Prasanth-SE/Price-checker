@@ -1,0 +1,43 @@
+<?php require_once "controllerUserData.php"; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="/pricechecker-frontend/user/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/css/commonstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 form">
+                <div autocomplete="">
+                    <h2 class="text-center">Signup Form</h2>
+                    <p class="text-center">It's quick and easy.</p>
+                    <div id="alert-error" class=""> </div>
+                    <div class="form-group">
+                        <input id="full-name" class="form-control" type="text" name="name" placeholder="Full Name" required >
+                    </div>
+                    <div class="form-group">
+                        <input id="email" class="form-control" type="email" name="email" placeholder="Email Address" required >
+                    </div>
+                    <div class="form-group">
+                        <input id="password" class="form-control" type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="confirm-password" class="form-control" type="password" name="password" placeholder="Confirm password" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control button" type="submit" name="signup" value="Signup" onclick="signup()">
+                    </div>
+                    <div class="link login-link text-center">Already a member? <a href="login-user.html">Login here</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/pricechecker-frontend/user/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/pricechecker-frontend/user/assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="/pricechecker-frontend/user/assets/js/myjs/common.js"></script>
+    <script src="/pricechecker-frontend/user/assets/js/myjs/signup-user.js"></script>
+</body>
+</html>
