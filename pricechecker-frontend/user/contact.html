@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>Contact Us | PriceChecker</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/font-electro.css">
+
+    <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+
+    <!-- CSS Electro Template -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+
+<!-- ========== HEADER ========== -->
+<header id="header" class="u-header u-header-left-aligned-nav">
+</header>
+<!-- ========== END HEADER ========== -->
+
+<!-- ========== MAIN CONTENT ========== -->
+<main id="content" role="main">
+    <div class="container">
+        <div class="mb-5">
+            <h1 class="text-center">Contact</h1>
+        </div>
+        <div class="row mb-10">
+            <div class="col-lg-7 col-xl-6 mb-8 mb-lg-0">
+                <div class="mr-xl-6">
+                    <div class="border-bottom border-color-1 mb-5">
+                        <h3 class="section-title mb-0 pb-2 font-size-25">Leave us a Message</h3>
+                    </div>
+                    <p class="max-width-830-xl text-gray-90">If you have any question or proposal, please leave message for us.</p>
+                    <div id="email-fail-alert" class="alert alert-danger text-center" style="visibility: hidden">
+                    </div>
+                    <div class="js-validate" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Input -->
+                                <div class="js-form-message mb-4">
+                                    <label class="form-label">
+                                        First name
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="" aria-label="" required="" data-msg="Please enter your frist name." data-error-class="u-has-error" data-success-class="u-has-success" autocomplete="off">
+                                </div>
+                                <!-- End Input -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- Input -->
+                                <div class="js-form-message mb-4">
+                                    <label class="form-label">
+                                        Last name
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="" aria-label="" required="" data-msg="Please enter your last name." data-error-class="u-has-error" data-success-class="u-has-success">
+                                </div>
+                                <!-- End Input -->
+                            </div>
+
+                            <div class="col-md-12">
+                                <!-- Input -->
+                                <div class="js-form-message mb-4">
+                                    <label class="form-label">
+                                        Subject
+                                    </label>
+                                    <input type="text" class="form-control" id="subject" placeholder="" aria-label="" data-msg="Please enter subject." data-error-class="u-has-error" data-success-class="u-has-success">
+                                </div>
+                                <!-- End Input -->
+                            </div>
+                            <div class="col-md-12">
+                                <div class="js-form-message mb-4">
+                                    <label class="form-label">
+                                        Your Message
+                                    </label>
+
+                                    <div class="input-group">
+                                        <textarea class="form-control p-5" rows="4" id="mail-text" placeholder=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <button onclick="sendEmail()" class="btn btn-primary-dark-w px-5">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-6">
+                <div class="mb-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835252972956!2d144.95592398991224!3d-37.817327693787625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1575470633967!5m2!1sen!2sin" width="100%" height="288" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="border-bottom border-color-1 mb-5">
+                    <h3 class="section-title mb-0 pb-2 font-size-25">Our Address</h3>
+                </div>
+                <address class="mb-6 text-lh-23">
+                    price checker ,
+                    software developer team,
+                    US
+                    <div class="">Support(+800) 856 800 604</div>
+                    <div class="">Email: <a class="text-blue text-decoration-on" href="mailto:contact@yourstore.com">pricechecker@electro.com</a></div>
+                </address>
+                <h5 class="font-size-14 font-weight-bold mb-3">Opening Hours</h5>
+                <div class="">Monday to Friday: 9am-9pm</div>
+                <div class="mb-6">Saturday to Sunday: 9am-11pm</div>
+                <h5 class="font-size-14 font-weight-bold mb-3">Careers</h5>
+                <p class="text-gray-90">If you’re interested in employment opportunities at Software Developer Team, please email us: <a class="text-blue text-decoration-on" href="mailto:contact@software.com">pricechecker@electro.com</a></p>
+            </div>
+        </div>
+        <!-- Brand Carousel -->
+        <!--<div class="mb-8">-->
+            <!--<div class="py-2 border-top border-bottom">-->
+                <!--<div class="js-slick-carousel u-slick my-1"-->
+                     <!--data-slides-show="5"-->
+                     <!--data-slides-scroll="1"-->
+                     <!--data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-normal u-slick__arrow-centered&#45;&#45;y"-->
+                     <!--data-arrow-left-classes="fa fa-angle-left u-slick__arrow-classic-inner&#45;&#45;left z-index-9"-->
+                     <!--data-arrow-right-classes="fa fa-angle-right u-slick__arrow-classic-inner&#45;&#45;right"-->
+                     <!--data-responsive='[{-->
+                                <!--"breakpoint": 992,-->
+                                <!--"settings": {-->
+                                    <!--"slidesToShow": 2-->
+                                <!--}-->
+                            <!--}, {-->
+                                <!--"breakpoint": 768,-->
+                                <!--"settings": {-->
+                                    <!--"slidesToShow": 1-->
+                                <!--}-->
+                            <!--}, {-->
+                                <!--"breakpoint": 554,-->
+                                <!--"settings": {-->
+                                    <!--"slidesToShow": 1-->
+                                <!--}-->
+                            <!--}]'>-->
+                    <!--<div class="js-slide">-->
+                        <!--<a href="#" class="link-hover__brand">-->
+                            <!--<img class="img-fluid m-auto max-height-50" src="images/200X60/1.png" alt="Image Description">-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="js-slide">-->
+                        <!--<a href="#" class="link-hover__brand">-->
+                            <!--<img class="img-fluid m-auto max-height-50" src="images/200X60/2.png" alt="Image Description">-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="js-slide">-->
+                        <!--<a href="#" class="link-hover__brand">-->
+                            <!--<img class="img-fluid m-auto max-height-50" src="images/200X60/3.png" alt="Image Description">-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="js-slide">-->
+                        <!--<a href="#" class="link-hover__brand">-->
+                            <!--<img class="img-fluid m-auto max-height-50" src="images/200X60/4.png" alt="Image Description">-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="js-slide">-->
+                        <!--<a href="#" class="link-hover__brand">-->
+                            <!--<img class="img-fluid m-auto max-height-50" src="images/200X60/5.png" alt="Image Description">-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="js-slide">-->
+                        <!--<a href="#" class="link-hover__brand">-->
+                            <!--<img class="img-fluid m-auto max-height-50" src="images/200X60/1.jpg" alt="Image Description">-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!-- End Brand Carousel -->
+    </div>
+</main>
+<!-- ========== END MAIN CONTENT ========== -->
+
+<!-- ========== FOOTER ========== -->
+<footer>
+</footer>
+<!-- ========== END FOOTER ========== -->
+
+<!-- Go to Top -->
+<a class="js-go-to u-go-to" href="#"
+   data-position='{"bottom": 15, "right": 15 }'
+   data-type="fixed"
+   data-offset-top="400"
+   data-compensation="#header"
+   data-show-effect="slideInUp"
+   data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+<!-- JS Global Compulsory -->
+<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script src="assets/vendor/appear.js"></script>
+<script src="assets/vendor/jquery.countdown.min.js"></script>
+<script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+<script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="assets/vendor/typed.js/lib/typed.min.js"></script>
+<script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="assets/vendor/appear.js"></script>
+<script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+<!-- JS Electro -->
+<script src="assets/js/hs.core.js"></script>
+<script src="assets/js/components/hs.countdown.js"></script>
+<script src="assets/js/components/hs.header.js"></script>
+<script src="assets/js/components/hs.hamburgers.js"></script>
+<script src="assets/js/components/hs.unfold.js"></script>
+<script src="assets/js/components/hs.focus-state.js"></script>
+<script src="assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="assets/js/components/hs.validation.js"></script>
+<script src="assets/js/components/hs.fancybox.js"></script>
+<script src="assets/js/components/hs.onscroll-animation.js"></script>
+<script src="assets/js/components/hs.slick-carousel.js"></script>
+<script src="assets/js/components/hs.quantity-counter.js"></script>
+<script src="assets/js/components/hs.range-slider.js"></script>
+<script src="assets/js/components/hs.show-animation.js"></script>
+<script src="assets/js/components/hs.svg-injector.js"></script>
+<script src="assets/js/components/hs.scroll-nav.js"></script>
+<script src="assets/js/components/hs.go-to.js"></script>
+<script src="assets/js/components/hs.selectpicker.js"></script>
+<script src="assets/js/myjs/common.js"></script>
+<script src="assets/js/myjs/base.js"></script>
+<script src="assets/js/myjs/send-mail.js"></script>
+</body>
+</html>
