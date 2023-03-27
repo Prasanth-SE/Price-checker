@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="shortcut icon" href="/pricechecker-frontend/user/favicon.png">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/css/commonstyle.css">
+    <script src="/pricechecker-frontend/user/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/pricechecker-frontend/user/assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="/pricechecker-frontend/user/assets/js/myjs/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 form login-form">
+                <div  autocomplete="">
+                    <h2 class="text-center">Login Form</h2>
+                    <p class="text-center">Login with your email and password.</p>
+                        <div id="login-fail-alert" class="alert alert-danger text-center" style="visibility: hidden">
+                        </div>
+                    <div class="form-group">
+                        <input id="email" class="form-control" type="email" name="email" placeholder="Email Address" >
+                    </div>
+                    <div class="form-group">
+                        <input id="password" class="form-control" type="password" name="password" placeholder="Password" >
+                    </div>
+                    <div class="link forget-pass text-left"><a href="/pricechecker-frontend/user/authentications/forgot-password.html">Forgot password?</a></div>
+                    <div class="form-group">
+                        <button class="form-control button" name="login" onclick="login()">Login</button>
+                    </div>
+                    <div class="link login-link text-center">Not yet a member? <a href="/pricechecker-frontend/user/authentications/signup-user.html">Signup now</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/pricechecker-frontend/user/assets/js/myjs/login.js"></script>
+</body>
+</html>
