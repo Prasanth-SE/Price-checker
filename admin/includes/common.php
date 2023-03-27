@@ -1,2 +1,0 @@
-<?php
-$timeOutTime = 1;
