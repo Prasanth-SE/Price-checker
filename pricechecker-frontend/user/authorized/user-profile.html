@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>My Account | Electro - Responsive Website Template</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/css/font-electro.css">
+
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+
+    <!-- CSS Electro Template -->
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/css/theme.css">
+    <!--    customized style-->
+    <link rel="stylesheet" href="/pricechecker-frontend/user/assets/css/custom.css">
+</head>
+
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="u-header u-header-left-aligned-nav">
+</header>
+<!-- ========== END HEADER ========== -->
+
+<!-- ========== MAIN CONTENT ========== -->
+<main id="content" role="main">
+
+    <div class="container">
+        <div class="mb-4">
+            <h1 class="text-center">My Account</h1>
+        </div>
+        <div class="my-4 my-xl-8">
+            <div class="row">
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="flex-content-center h-100">
+                        <div class="width-1 bg-1 h-100"></div>
+                        <div class="width-50 height-50 border border-color-1 rounded-circle flex-content-center font-italic bg-white position-absolute"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 ml-xl-auto mr-md-auto mr-xl-0 mb-8 mb-md-0">
+                    <p class="text-gray-90 mb-4">Welcome ! Change your account.</p>
+                    <!-- End Title -->
+                    <div >
+                        <!-- Form Group -->
+                        <div class="js-form-message form-group">
+                            <label class="form-label" for="email">Username
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="email" class="form-control" name="email" id="user-name" placeholder="Username" aria-label="Username" required
+                                   data-msg="Please enter a valid user name."
+                                   data-error-class="u-has-error"
+                                   data-success-class="u-has-success">
+                        </div>
+                        <!-- End Form Group -->
+                        <!-- Form Group -->
+                        <div class="js-form-message form-group">
+                            <label class="form-label" for="email" >Email address
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="email" class="form-control"  name="email" id="email" placeholder="Email address" aria-label="Email address" required
+                                   data-msg="Please enter a valid email address."
+                                   data-error-class="u-has-error"
+                                   data-success-class="u-has-success">
+                        </div>
+                        <!-- End Form Group -->
+
+                        <!-- Form Group -->
+                        <div class="js-form-message form-group">
+                            <label class="form-label" for="password">Password <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" aria-label="Password" required
+                                   data-msg="Your password is invalid. Please try again."
+                                   data-error-class="u-has-error"
+                                   data-success-class="u-has-success">
+                        </div>
+                        <!-- End Form Group -->
+                        <!-- Form Group -->
+                        <div class="js-form-message form-group">
+                            <label class="form-label" for="confirm-password">Confirm Password <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" name="password" id="confirm-password" placeholder="Confirm Password" aria-label="Confirm Password" required
+                                   data-msg="Your password is invalid. Please try again."
+                                   data-error-class="u-has-error"
+                                   data-success-class="u-has-success">
+                        </div>
+                        <!-- End Form Group -->
+                        <!-- Button -->
+                        <div class="mb-1">
+                            <div class="mb-3">
+                                <button class="btn btn-primary-dark-w px-5" onclick="updateUser()">Update</button>
+                            </div>
+                        </div>
+                        <!-- End Button -->
+                    </div>
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="flex-content-center h-100">
+                        <div class="width-1 bg-1 h-100"></div>
+                        <div class="width-50 height-50 border border-color-1 rounded-circle flex-content-center font-italic bg-white position-absolute"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- ========== END MAIN CONTENT ========== -->
+
+<!-- ========== FOOTER ========== -->
+<footer>
+</footer>
+<!-- ========== END FOOTER ========== -->
+
+<!-- Go to Top -->
+<a class="js-go-to u-go-to" href="#"
+   data-position='{"bottom": 15, "right": 15 }'
+   data-type="fixed"
+   data-offset-top="400"
+   data-compensation="#header"
+   data-show-effect="slideInUp"
+   data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+<!-- JS Global Compulsory -->
+<script src="/pricechecker-frontend/user/assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script src="/pricechecker-frontend/user/assets/vendor/appear.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/jquery.countdown.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/typed.js/lib/typed.min.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/appear.js"></script>
+<script src="/pricechecker-frontend/user/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+<!-- JS Electro -->
+<script src="/pricechecker-frontend/user/assets/js/hs.core.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.countdown.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.header.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.hamburgers.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.unfold.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.focus-state.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.validation.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.fancybox.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.onscroll-animation.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.slick-carousel.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.quantity-counter.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.range-slider.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.show-animation.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.svg-injector.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.scroll-nav.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.go-to.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/components/hs.selectpicker.js"></script>
+
+<!-- JS Plugins Init. -->
+<script src="/pricechecker-frontend/user/assets/js/myjs/common.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/myjs/base.js"></script>
+<script src="/pricechecker-frontend/user/assets/js/myjs/edit-user.js"></script>
+
+</body>
+</html>
