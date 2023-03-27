@@ -1,0 +1,319 @@
+/* common css */
+/* ====================== */
+.my-scroll{
+    height:100vh;
+    overflow-y: scroll;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* logo css */
+/* =================== */
+
+.logo{
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 20px;
+}
+
+          /* admin1 login form css */
+/* ==================================== */
+
+.login-form{
+    background: linear-gradient(30deg,#e9e9e9 49%, #e4e4e4 50%);
+      box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+   
+      padding: 60px 50px;
+      margin: 80px;
+      text-align: center;
+  }
+  
+  .login-form .form-group{
+      text-align: center;
+  }
+  
+  .login-form .form-control{
+      width: 90%;
+      display: inline-block;
+      border: none;
+      padding: 15px 15px;
+      height: 40px;
+      border-radius: 4px;
+  }
+  .login-form .form-control:focus{
+      border: none;
+      box-shadow: 3px 3px 5px #999;
+  }
+  .login-form .form-control::placeholder{
+      color: #800;
+      text-transform: capitalize;
+  }
+  
+  .login-form .btn{
+      padding: 7px 15px;
+      font-size: 20px;
+      font-weight: 600;
+      width: 90%;
+      text-transform: capitalize;
+      color: #fff;
+      background-color:  #4070f4;
+      transition: all 0.3s;
+  }
+  
+  .login-form .btn:hover,
+  .login-form .btn:focus{
+      background-color: #333;
+  }
+/* admin1 header css */
+/* ========================= */
+
+#admin-header{
+    background: linear-gradient(to bottom, #e7e7e7, #f5f5f5);
+    padding: 15px 0 12px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 1;
+}
+#admin-header .logo{
+    margin: 0;
+}
+
+#admin-header .logo-img{
+    display: block;
+}
+#admin-header .logo-img img{
+    width: 100%;
+}
+
+#admin-header .dropdown{
+    text-align: right;
+}
+
+#admin-header .logout{
+    color: #fff;
+    background-color: #ff0000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 4px 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+#admin-header .logout:hover{
+    background-color: #333;
+    box-shadow: 0 0 5px #333;
+}
+
+/* admin1 wrapper css */
+/* ===================== */
+
+#admin-wrapper{
+    /* border: 1px solid #000; */
+    min-height: 700px;
+}
+
+
+/* admin1 menu css */
+/* ===================== */
+
+#admin-menu{
+    background-color:#1a1818;
+    padding: 20px 10px;
+    min-height: 700px;
+}
+#admin-menu .menu-list li a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.3s;
+}
+
+#admin-menu .menu-list li.active a,
+#admin-menu .menu-list li a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* admin1 content css */
+/* ====================== */
+
+#admin-content{
+    padding: 25px 20px 0;
+    min-height: 650px;
+}
+#admin-content .admin-content-container{
+    min-height: 645px;
+}
+
+#admin-content .admin-heading{
+    color: #333;
+    font-size: 30px;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+#admin-content .add-new{
+    color: #fff;
+    background-color: #ff0000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+#admin-content .add-new:hover{
+    background-color: #333;
+    box-shadow: 0 0 5px #333;
+}
+
+#admin-content .detail-box{
+    color: #fff;
+    background-color: #ff0000;
+    width: 220px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 50px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+}
+#admin-content .detail-box .count{
+    display: block;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 0 7px;
+}
+
+#admin-content .detail-box .count-tag{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* ============================== */
+
+#admin-content .add-post-form{
+    /* border: 1px solid #000; */
+    margin: 0;
+}
+#admin-content .add-post-form .form-group.category,
+#admin-content .add-post-form .form-group.sub_category,
+#admin-content .add-post-form .form-group.brand{
+    display: inline-block;
+    width: 30%;
+    margin-right: 30px;
+}
+
+#admin-content .add-post-form .form-group.brand{
+    margin-right: 0;
+}
+
+#admin-content .add-post-form .form-control:focus{
+    box-shadow: 0 0 1px #333;
+    border-color: #999;
+}
+#admin-content .not-found{
+    padding: 10px 25px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#admin-footer{
+    padding: 5px;
+    text-align: center;
+    margin: 0 -20px;
+    color: #fff;
+    background-color: #242221;
+}
+
+.modal-body table{
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.modal-body table h3{
+    text-align: center;
+}
+
+     
+/********************* Shopping Demo-2 **********************/
+h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
+.h1 ::after{
+    content:  "";
+position: absolute;
+display: block;
+width: 20px;
+height: 2px;
+background: #e03a3c;
+bottom: 0;
+left: 0;
+}
+.demo{padding:45px 0}
+.product-grid2{font-family:'Open Sans',sans-serif;position:relative}
+.product-grid2 .product-image2{overflow:hidden;position:relative;}
+.product-grid2 .product-image2 a{display:block}
+.product-grid2 .product-image2 img{width:100%;height:250px}
+.product-image2 .pic-1{opacity:1;transition:all .5s}
+.product-grid2:hover .product-image2 .pic-1{opacity:0}
+.product-grid2 .social{padding:0;margin:0;position:absolute;bottom:50px;right:25px;z-index:1}
+.product-grid2 .social li{margin:0 0 10px;display:block;transform:translateX(100px);transition:all .5s}
+.product-grid2:hover .social li{transform:translateX(0)}
+.product-grid2:hover .social li:nth-child(2){transition-delay:.15s}
+.product-grid2:hover .social li:nth-child(3){transition-delay:.25s}
+.product-grid2 .social li a{color:#505050;background-color:#fff;font-size:17px;line-height:45px;text-align:center;height:45px;width:45px;border-radius:50%;display:block;transition:all .3s ease 0s}
+.product-grid2 .social li a:hover{color:#fff;background-color:#3498db;box-shadow:0 0 10px rgba(0,0,0,.5)}
+.product-grid2 .social li a:after,.product-grid2 .social li a:before{content:attr(data-tip);color:#fff;background-color:#000;font-size:12px;line-height:22px;border-radius:3px;padding:0 5px;white-space:nowrap;opacity:0;transform:translateX(-50%);position:absolute;left:50%;top:-30px}
+.product-grid2 .social li a:after{content:'';height:15px;width:15px;border-radius:0;transform:translateX(-50%) rotate(45deg);top:-22px;z-index:-1}
+.product-grid2 .social li a:hover:after,.product-grid2 .social li a:hover:before{opacity:1}
+.product-grid2 .add-to-cart{color:#fff;background-color:#404040;font-size:15px;text-align:center;width:100%;padding:10px 0;display:block;position:absolute;left:0;bottom:-100%;transition:all .3s}
+.product-grid2 .add-to-cart:hover{background-color:#3498db;text-decoration:none}
+.product-grid2:hover .add-to-cart{bottom:0}
+.product-grid2 .product-new-label{background-color:#3498db;color:#fff;font-size:17px;padding:5px 10px;position:absolute;right:0;top:0;transition:all .3s}
+.product-grid2:hover .product-new-label{opacity:0}
+.product-grid2 .product-content{text-align:center}
+.product-grid2 .title{font-size:17px;margin:0 0 7px}
+.product-grid2 .title a{color:#303030}
+.product-grid2 .title a:hover{color:#3498db}
+.product-grid2 .price{color:#303030;font-size:15px}
+@media screen and (max-width:990px){.product-grid2{margin-bottom:30px}
+}
