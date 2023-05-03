@@ -50,7 +50,7 @@
                     <p class="max-width-830-xl text-gray-90">If you have any question or proposal, please leave message for us.</p>
                     <div id="email-fail-alert" class="alert alert-danger text-center" style="visibility: hidden">
                     </div>
-                    <div class="js-validate" novalidate="novalidate">
+                    <form id="email-form" class="js-validate" novalidate="novalidate">
                         <div class="row">
                             <div class="col-md-6">
                                 <!-- Input -->
@@ -99,9 +99,9 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <button onclick="sendEmail()" class="btn btn-primary-dark-w px-5">Send Message</button>
+                            <input type="button" id="btnSubmit" class="btn btn-primary-dark-w px-5" value="Send Message" />
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="col-lg-5 col-xl-6">
@@ -116,13 +116,13 @@
                     software developer team,
                     US
                     <div class="">Support(+800) 856 800 604</div>
-                    <div class="">Email: <a class="text-blue text-decoration-on" href="mailto:contact@yourstore.com">pricechecker@electro.com</a></div>
+                    <div class="">Email: <a class="text-blue text-decoration-on" href="mailto:pricecheckerproject@gmail.com">pricecheckerproject@gmail.com</a></div>
                 </address>
                 <h5 class="font-size-14 font-weight-bold mb-3">Opening Hours</h5>
                 <div class="">Monday to Friday: 9am-9pm</div>
                 <div class="mb-6">Saturday to Sunday: 9am-11pm</div>
                 <h5 class="font-size-14 font-weight-bold mb-3">Careers</h5>
-                <p class="text-gray-90">If you’re interested in employment opportunities at Software Developer Team, please email us: <a class="text-blue text-decoration-on" href="mailto:contact@software.com">pricechecker@electro.com</a></p>
+                <p class="text-gray-90">If you’re interested in employment opportunities at Software Developer Team, please email us: <a class="text-blue text-decoration-on" href="mailto:pricecheckerproject@gmail.com">pricecheckerproject@gmail.com</a></p>
             </div>
         </div>
         <!-- Brand Carousel -->
@@ -247,5 +247,28 @@
 <script src="assets/js/myjs/common.js"></script>
 <script src="assets/js/myjs/base.js"></script>
 <script src="assets/js/myjs/send-mail.js"></script>
+<script>
+    document.getElementById('btnSubmit').addEventListener('click', function (e){
+        console.log('submitted!');
+        e.preventDefault();  //to prevent form submission
+        let alertDiv = document.getElementById('email-fail-alert');
+        alertDiv.setAttribute("style", "visibility:hidden;");
+
+        let firstName = document.getElementById('firstName').value;
+        let lastName = document.getElementById('lastName').value;
+        let subject = document.getElementById('subject').value;
+        let mailText = document.getElementById('mail-text').value;
+        if(!firstName){
+            document.getElementById('firstName').focus();
+            return false;
+        }
+        if(!lastName){
+            document.getElementById('lastName').focus();
+            return false;
+        }
+        sendEmail(firstName, lastName, subject, mailText);
+        return false;
+    });
+</script>
 </body>
 </html>
